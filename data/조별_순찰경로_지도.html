@@ -1,0 +1,1055 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_cafc540fe27ed64c6453cf32f8532377 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_cafc540fe27ed64c6453cf32f8532377" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_cafc540fe27ed64c6453cf32f8532377 = L.map(
+                "map_cafc540fe27ed64c6453cf32f8532377",
+                {
+                    center: [37.487968879166665, 127.07707134166667],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 14,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_296edee157e568a6e984858f3f1ba3fc = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_296edee157e568a6e984858f3f1ba3fc.addTo(map_cafc540fe27ed64c6453cf32f8532377);
+        
+    
+            var poly_line_587ce10cf273b8a746cbc23233bfa738 = L.polyline(
+                [[37.4894424, 127.0764023], [37.4887382, 127.0782333], [37.4857687, 127.0823156], [37.4894424, 127.0764023]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_cafc540fe27ed64c6453cf32f8532377);
+        
+    
+            var marker_77c7d0bf9c5072b0bc952c4c37a58426 = L.marker(
+                [37.4894424, 127.0764023],
+                {
+}
+            ).addTo(map_cafc540fe27ed64c6453cf32f8532377);
+        
+    
+            var icon_09d965edb182b26776ca9b6be718ca47 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a99c9ab901ed6e1ebfad4689575472d6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_edce59eba13c2c94a57b3b9b2536ef01 = $(`<div id="html_edce59eba13c2c94a57b3b9b2536ef01" style="width: 100.0%; height: 100.0%;">서울일원초등학교 - 서울일원초등학교 (0)</div>`)[0];
+                popup_a99c9ab901ed6e1ebfad4689575472d6.setContent(html_edce59eba13c2c94a57b3b9b2536ef01);
+            
+        
+
+        marker_77c7d0bf9c5072b0bc952c4c37a58426.bindPopup(popup_a99c9ab901ed6e1ebfad4689575472d6)
+        ;
+
+        
+    
+    
+                marker_77c7d0bf9c5072b0bc952c4c37a58426.setIcon(icon_09d965edb182b26776ca9b6be718ca47);
+            
+    
+            var marker_6cc7dba46fcda10fc0279ec30469834a = L.marker(
+                [37.4887382, 127.0782333],
+                {
+}
+            ).addTo(map_cafc540fe27ed64c6453cf32f8532377);
+        
+    
+            var icon_cfaf487f6c12232a6b8a05d9eda722b6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0a345460a974b87d90d54676e641371f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8e12dc295ee283b1c04c7a1f73b87d43 = $(`<div id="html_8e12dc295ee283b1c04c7a1f73b87d43" style="width: 100.0%; height: 100.0%;">서울일원초등학교 - 중동중학교 (1)</div>`)[0];
+                popup_0a345460a974b87d90d54676e641371f.setContent(html_8e12dc295ee283b1c04c7a1f73b87d43);
+            
+        
+
+        marker_6cc7dba46fcda10fc0279ec30469834a.bindPopup(popup_0a345460a974b87d90d54676e641371f)
+        ;
+
+        
+    
+    
+                marker_6cc7dba46fcda10fc0279ec30469834a.setIcon(icon_cfaf487f6c12232a6b8a05d9eda722b6);
+            
+    
+            var marker_2ac70dfece3fae5940985734504a19ae = L.marker(
+                [37.4857687, 127.0823156],
+                {
+}
+            ).addTo(map_cafc540fe27ed64c6453cf32f8532377);
+        
+    
+            var icon_c587ae60f19aebd7ab44689f7434dac4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1f9315312b78647789e96ae0f483eb7f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_51ee17b169e79632c857540d8c8fa5a3 = $(`<div id="html_51ee17b169e79632c857540d8c8fa5a3" style="width: 100.0%; height: 100.0%;">서울일원초등학교 - 밀알학교 (2)</div>`)[0];
+                popup_1f9315312b78647789e96ae0f483eb7f.setContent(html_51ee17b169e79632c857540d8c8fa5a3);
+            
+        
+
+        marker_2ac70dfece3fae5940985734504a19ae.bindPopup(popup_1f9315312b78647789e96ae0f483eb7f)
+        ;
+
+        
+    
+    
+                marker_2ac70dfece3fae5940985734504a19ae.setIcon(icon_c587ae60f19aebd7ab44689f7434dac4);
+            
+    
+            var marker_b75edd538252ce3a1bdb78d6671d3357 = L.marker(
+                [37.4894424, 127.0764023],
+                {
+}
+            ).addTo(map_cafc540fe27ed64c6453cf32f8532377);
+        
+    
+            var icon_b216c4d5c00392f59676a40e69c15b71 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0967a5f3f1d50095c4db7c0e947614ba = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_459bb34a175877f3e2323a93e5642c93 = $(`<div id="html_459bb34a175877f3e2323a93e5642c93" style="width: 100.0%; height: 100.0%;">서울일원초등학교 - 서울일원초등학교 (3)</div>`)[0];
+                popup_0967a5f3f1d50095c4db7c0e947614ba.setContent(html_459bb34a175877f3e2323a93e5642c93);
+            
+        
+
+        marker_b75edd538252ce3a1bdb78d6671d3357.bindPopup(popup_0967a5f3f1d50095c4db7c0e947614ba)
+        ;
+
+        
+    
+    
+                marker_b75edd538252ce3a1bdb78d6671d3357.setIcon(icon_b216c4d5c00392f59676a40e69c15b71);
+            
+    
+            var poly_line_ded89b1dd60b4116697dfd39afdca9b4 = L.polyline(
+                [[37.4903771, 127.0700308], [37.48421, 127.07006], [37.4919031, 127.0716502], [37.4903771, 127.0700308]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_cafc540fe27ed64c6453cf32f8532377);
+        
+    
+            var marker_13c81e93473cf57a1859dd67c6408b72 = L.marker(
+                [37.4903771, 127.0700308],
+                {
+}
+            ).addTo(map_cafc540fe27ed64c6453cf32f8532377);
+        
+    
+            var icon_483f45bde00fc7484eed7705dda99500 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5f1c25e25ca5ab4a6828e6b4d965dd68 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_02d1c5d98353e3e076fb78bfce50f432 = $(`<div id="html_02d1c5d98353e3e076fb78bfce50f432" style="width: 100.0%; height: 100.0%;">서울양전초등학교 - 서울양전초등학교 (0)</div>`)[0];
+                popup_5f1c25e25ca5ab4a6828e6b4d965dd68.setContent(html_02d1c5d98353e3e076fb78bfce50f432);
+            
+        
+
+        marker_13c81e93473cf57a1859dd67c6408b72.bindPopup(popup_5f1c25e25ca5ab4a6828e6b4d965dd68)
+        ;
+
+        
+    
+    
+                marker_13c81e93473cf57a1859dd67c6408b72.setIcon(icon_483f45bde00fc7484eed7705dda99500);
+            
+    
+            var marker_9d570f344007edf24ed49ad8a6e955ba = L.marker(
+                [37.48421, 127.07006],
+                {
+}
+            ).addTo(map_cafc540fe27ed64c6453cf32f8532377);
+        
+    
+            var icon_cecf0298fc1fbe88942c5eb9c7a31f63 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_40a10836d796d416f097e0b6799e566a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_fca062d3f7f0f928cd16a40c3be9017a = $(`<div id="html_fca062d3f7f0f928cd16a40c3be9017a" style="width: 100.0%; height: 100.0%;">서울양전초등학교 - 개포동근린공원 (1)</div>`)[0];
+                popup_40a10836d796d416f097e0b6799e566a.setContent(html_fca062d3f7f0f928cd16a40c3be9017a);
+            
+        
+
+        marker_9d570f344007edf24ed49ad8a6e955ba.bindPopup(popup_40a10836d796d416f097e0b6799e566a)
+        ;
+
+        
+    
+    
+                marker_9d570f344007edf24ed49ad8a6e955ba.setIcon(icon_cecf0298fc1fbe88942c5eb9c7a31f63);
+            
+    
+            var marker_1d4fe14f9823d436dbca35022041885e = L.marker(
+                [37.4919031, 127.0716502],
+                {
+}
+            ).addTo(map_cafc540fe27ed64c6453cf32f8532377);
+        
+    
+            var icon_49e28aeb82c037a2de8133390347ddb7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_281165a60f928e558eca57e9a40901d8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_cbadeed160b9d09fe0b0c55a432125ab = $(`<div id="html_cbadeed160b9d09fe0b0c55a432125ab" style="width: 100.0%; height: 100.0%;">서울양전초등학교 - 개원중학교 (2)</div>`)[0];
+                popup_281165a60f928e558eca57e9a40901d8.setContent(html_cbadeed160b9d09fe0b0c55a432125ab);
+            
+        
+
+        marker_1d4fe14f9823d436dbca35022041885e.bindPopup(popup_281165a60f928e558eca57e9a40901d8)
+        ;
+
+        
+    
+    
+                marker_1d4fe14f9823d436dbca35022041885e.setIcon(icon_49e28aeb82c037a2de8133390347ddb7);
+            
+    
+            var marker_2f67fdbe741baee418702ac54550f97f = L.marker(
+                [37.4903771, 127.0700308],
+                {
+}
+            ).addTo(map_cafc540fe27ed64c6453cf32f8532377);
+        
+    
+            var icon_c8c401c736cfc46f6b4ecb39c653852f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_60f0c9f1b87f663f073fedfa34f1e751 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_98c2193338d77d9dc5101631700761bf = $(`<div id="html_98c2193338d77d9dc5101631700761bf" style="width: 100.0%; height: 100.0%;">서울양전초등학교 - 서울양전초등학교 (3)</div>`)[0];
+                popup_60f0c9f1b87f663f073fedfa34f1e751.setContent(html_98c2193338d77d9dc5101631700761bf);
+            
+        
+
+        marker_2f67fdbe741baee418702ac54550f97f.bindPopup(popup_60f0c9f1b87f663f073fedfa34f1e751)
+        ;
+
+        
+    
+    
+                marker_2f67fdbe741baee418702ac54550f97f.setIcon(icon_c8c401c736cfc46f6b4ecb39c653852f);
+            
+    
+            var poly_line_232728d6a248228908826c173c342473 = L.polyline(
+                [[37.4866958, 127.0692353], [37.48421, 127.07006], [37.4866958, 127.0692353]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_cafc540fe27ed64c6453cf32f8532377);
+        
+    
+            var marker_cdb2cdd5b12a4410cd05959495a25a8c = L.marker(
+                [37.4866958, 127.0692353],
+                {
+}
+            ).addTo(map_cafc540fe27ed64c6453cf32f8532377);
+        
+    
+            var icon_dff7de1a4ee9dbd6748699f38b37e5f1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c18583908994b6165f78654d4e9225c0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_66a38ee4692153a67e4f0ee35cfd5a0d = $(`<div id="html_66a38ee4692153a67e4f0ee35cfd5a0d" style="width: 100.0%; height: 100.0%;">서울개포초등학교 - 서울개포초등학교 (0)</div>`)[0];
+                popup_c18583908994b6165f78654d4e9225c0.setContent(html_66a38ee4692153a67e4f0ee35cfd5a0d);
+            
+        
+
+        marker_cdb2cdd5b12a4410cd05959495a25a8c.bindPopup(popup_c18583908994b6165f78654d4e9225c0)
+        ;
+
+        
+    
+    
+                marker_cdb2cdd5b12a4410cd05959495a25a8c.setIcon(icon_dff7de1a4ee9dbd6748699f38b37e5f1);
+            
+    
+            var marker_c955af27ce47011599b689a92a72c9c4 = L.marker(
+                [37.48421, 127.07006],
+                {
+}
+            ).addTo(map_cafc540fe27ed64c6453cf32f8532377);
+        
+    
+            var icon_3a9cb278544cd0b962a1de8d2853b15a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0a10765b302bfa68cedf299d8c1587ea = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5c3b32b90c3a3bae9925935743724ad1 = $(`<div id="html_5c3b32b90c3a3bae9925935743724ad1" style="width: 100.0%; height: 100.0%;">서울개포초등학교 - 개포동근린공원 (1)</div>`)[0];
+                popup_0a10765b302bfa68cedf299d8c1587ea.setContent(html_5c3b32b90c3a3bae9925935743724ad1);
+            
+        
+
+        marker_c955af27ce47011599b689a92a72c9c4.bindPopup(popup_0a10765b302bfa68cedf299d8c1587ea)
+        ;
+
+        
+    
+    
+                marker_c955af27ce47011599b689a92a72c9c4.setIcon(icon_3a9cb278544cd0b962a1de8d2853b15a);
+            
+    
+            var marker_da7a323988913862e00264b3b4bdf7e9 = L.marker(
+                [37.4866958, 127.0692353],
+                {
+}
+            ).addTo(map_cafc540fe27ed64c6453cf32f8532377);
+        
+    
+            var icon_a2988920171ba94c0dfa2cdd11e5db06 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_952c7f3bbfb93f26aaca6515c9390eaf = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4becebbfbdac8d5d9cdd4d1f58e25f1b = $(`<div id="html_4becebbfbdac8d5d9cdd4d1f58e25f1b" style="width: 100.0%; height: 100.0%;">서울개포초등학교 - 서울개포초등학교 (2)</div>`)[0];
+                popup_952c7f3bbfb93f26aaca6515c9390eaf.setContent(html_4becebbfbdac8d5d9cdd4d1f58e25f1b);
+            
+        
+
+        marker_da7a323988913862e00264b3b4bdf7e9.bindPopup(popup_952c7f3bbfb93f26aaca6515c9390eaf)
+        ;
+
+        
+    
+    
+                marker_da7a323988913862e00264b3b4bdf7e9.setIcon(icon_a2988920171ba94c0dfa2cdd11e5db06);
+            
+    
+            var poly_line_c283a8467c8266273725eb25fd971628 = L.polyline(
+                [[37.4938605, 127.0768669], [37.4777461, 127.058229], [37.48421, 127.07006], [37.4938605, 127.0768669]],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_cafc540fe27ed64c6453cf32f8532377);
+        
+    
+            var marker_7b8fd435ba8c8b6670761e25c8877813 = L.marker(
+                [37.4938605, 127.0768669],
+                {
+}
+            ).addTo(map_cafc540fe27ed64c6453cf32f8532377);
+        
+    
+            var icon_fa737efa1ff06d3209f1b226912fea34 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_24ded4fdaf113e9cbfc8e981eef6a777 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d338b923152b86edd28fc6a981bef2d0 = $(`<div id="html_d338b923152b86edd28fc6a981bef2d0" style="width: 100.0%; height: 100.0%;">서울대진초등학교 - 서울대진초등학교 (0)</div>`)[0];
+                popup_24ded4fdaf113e9cbfc8e981eef6a777.setContent(html_d338b923152b86edd28fc6a981bef2d0);
+            
+        
+
+        marker_7b8fd435ba8c8b6670761e25c8877813.bindPopup(popup_24ded4fdaf113e9cbfc8e981eef6a777)
+        ;
+
+        
+    
+    
+                marker_7b8fd435ba8c8b6670761e25c8877813.setIcon(icon_fa737efa1ff06d3209f1b226912fea34);
+            
+    
+            var marker_d0311ee58f22364c8507c2c78008159f = L.marker(
+                [37.4777461, 127.058229],
+                {
+}
+            ).addTo(map_cafc540fe27ed64c6453cf32f8532377);
+        
+    
+            var icon_f396212a42741a7c40752efea3b6a69c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0ded9ab5f00cd5293eccb24c80a7340d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4ac37fd1cfc10fd9af94ffb882b53855 = $(`<div id="html_4ac37fd1cfc10fd9af94ffb882b53855" style="width: 100.0%; height: 100.0%;">서울대진초등학교 - 대진공원 (1)</div>`)[0];
+                popup_0ded9ab5f00cd5293eccb24c80a7340d.setContent(html_4ac37fd1cfc10fd9af94ffb882b53855);
+            
+        
+
+        marker_d0311ee58f22364c8507c2c78008159f.bindPopup(popup_0ded9ab5f00cd5293eccb24c80a7340d)
+        ;
+
+        
+    
+    
+                marker_d0311ee58f22364c8507c2c78008159f.setIcon(icon_f396212a42741a7c40752efea3b6a69c);
+            
+    
+            var marker_2af5f9203c73f9cee8ce7fab224d1429 = L.marker(
+                [37.48421, 127.07006],
+                {
+}
+            ).addTo(map_cafc540fe27ed64c6453cf32f8532377);
+        
+    
+            var icon_b4cccd37d1fc6705ae977c5bbf54a56d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d652ce146ff75fd6a1fec5c2cd4e14fb = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4c8104850ad75b9579e0b85a33db50d2 = $(`<div id="html_4c8104850ad75b9579e0b85a33db50d2" style="width: 100.0%; height: 100.0%;">서울대진초등학교 - 마루공원 (2)</div>`)[0];
+                popup_d652ce146ff75fd6a1fec5c2cd4e14fb.setContent(html_4c8104850ad75b9579e0b85a33db50d2);
+            
+        
+
+        marker_2af5f9203c73f9cee8ce7fab224d1429.bindPopup(popup_d652ce146ff75fd6a1fec5c2cd4e14fb)
+        ;
+
+        
+    
+    
+                marker_2af5f9203c73f9cee8ce7fab224d1429.setIcon(icon_b4cccd37d1fc6705ae977c5bbf54a56d);
+            
+    
+            var marker_1baf6a0a1bf39e5e35a3bb29dcc31bb7 = L.marker(
+                [37.4938605, 127.0768669],
+                {
+}
+            ).addTo(map_cafc540fe27ed64c6453cf32f8532377);
+        
+    
+            var icon_27c115a9eb26fe4514f3427354d8e9fd = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_789876299386fd97f8d860801538ac0a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f57f0df6208af35a0e255be69a8ab820 = $(`<div id="html_f57f0df6208af35a0e255be69a8ab820" style="width: 100.0%; height: 100.0%;">서울대진초등학교 - 서울대진초등학교 (3)</div>`)[0];
+                popup_789876299386fd97f8d860801538ac0a.setContent(html_f57f0df6208af35a0e255be69a8ab820);
+            
+        
+
+        marker_1baf6a0a1bf39e5e35a3bb29dcc31bb7.bindPopup(popup_789876299386fd97f8d860801538ac0a)
+        ;
+
+        
+    
+    
+                marker_1baf6a0a1bf39e5e35a3bb29dcc31bb7.setIcon(icon_27c115a9eb26fe4514f3427354d8e9fd);
+            
+    
+            var poly_line_89a9f1c157f3d049bcff676d1f1a2542 = L.polyline(
+                [[37.4919919, 127.0812822], [37.4931119, 127.0807535], [37.4919919, 127.0812822]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_cafc540fe27ed64c6453cf32f8532377);
+        
+    
+            var marker_203dbad2e4f7eff5637e3fe1cc6956a7 = L.marker(
+                [37.4919919, 127.0812822],
+                {
+}
+            ).addTo(map_cafc540fe27ed64c6453cf32f8532377);
+        
+    
+            var icon_f2bbdd993f9355c427a48201c66938f0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b5e2c09eae7ca394e537cf55f9fcbb7d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1ab1d507571a21d824aeaeb28501986a = $(`<div id="html_1ab1d507571a21d824aeaeb28501986a" style="width: 100.0%; height: 100.0%;">서울영희초등학교 - 서울영희초등학교 (0)</div>`)[0];
+                popup_b5e2c09eae7ca394e537cf55f9fcbb7d.setContent(html_1ab1d507571a21d824aeaeb28501986a);
+            
+        
+
+        marker_203dbad2e4f7eff5637e3fe1cc6956a7.bindPopup(popup_b5e2c09eae7ca394e537cf55f9fcbb7d)
+        ;
+
+        
+    
+    
+                marker_203dbad2e4f7eff5637e3fe1cc6956a7.setIcon(icon_f2bbdd993f9355c427a48201c66938f0);
+            
+    
+            var marker_b4a86d88aa3ad927f3b1526914905fe6 = L.marker(
+                [37.4931119, 127.0807535],
+                {
+}
+            ).addTo(map_cafc540fe27ed64c6453cf32f8532377);
+        
+    
+            var icon_431ed9ca515a8c0a69df703c340ea68e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a8785e4ba4a30d392c4151e8ea1885db = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0402c833e445870818126772daffd5c9 = $(`<div id="html_0402c833e445870818126772daffd5c9" style="width: 100.0%; height: 100.0%;">서울영희초등학교 - 중동고등학교 (1)</div>`)[0];
+                popup_a8785e4ba4a30d392c4151e8ea1885db.setContent(html_0402c833e445870818126772daffd5c9);
+            
+        
+
+        marker_b4a86d88aa3ad927f3b1526914905fe6.bindPopup(popup_a8785e4ba4a30d392c4151e8ea1885db)
+        ;
+
+        
+    
+    
+                marker_b4a86d88aa3ad927f3b1526914905fe6.setIcon(icon_431ed9ca515a8c0a69df703c340ea68e);
+            
+    
+            var marker_5bcc0d92a9869783153e38b7656e3a63 = L.marker(
+                [37.4919919, 127.0812822],
+                {
+}
+            ).addTo(map_cafc540fe27ed64c6453cf32f8532377);
+        
+    
+            var icon_7c594665b9522744bac0dcce9505ccff = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0d0e08c315d4a3fde8189e76fe608b52 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e06ae565964a0ba1ea91ae3f4dbc8779 = $(`<div id="html_e06ae565964a0ba1ea91ae3f4dbc8779" style="width: 100.0%; height: 100.0%;">서울영희초등학교 - 서울영희초등학교 (2)</div>`)[0];
+                popup_0d0e08c315d4a3fde8189e76fe608b52.setContent(html_e06ae565964a0ba1ea91ae3f4dbc8779);
+            
+        
+
+        marker_5bcc0d92a9869783153e38b7656e3a63.bindPopup(popup_0d0e08c315d4a3fde8189e76fe608b52)
+        ;
+
+        
+    
+    
+                marker_5bcc0d92a9869783153e38b7656e3a63.setIcon(icon_7c594665b9522744bac0dcce9505ccff);
+            
+    
+            var poly_line_86591d3e66a39d77833449e9410acc64 = L.polyline(
+                [[37.4920557, 127.087615], [37.48754, 127.08705], [37.4920557, 127.087615]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_cafc540fe27ed64c6453cf32f8532377);
+        
+    
+            var marker_3c9b1c402fd36870d45b06408e96ef5a = L.marker(
+                [37.4920557, 127.087615],
+                {
+}
+            ).addTo(map_cafc540fe27ed64c6453cf32f8532377);
+        
+    
+            var icon_56d306dff3ba438f6bc9a4ef8e6fe212 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "black",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0c4630ae7dd1688e2c28b62739d828f1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_68616bfde60e3f1e49480fbe784d920d = $(`<div id="html_68616bfde60e3f1e49480fbe784d920d" style="width: 100.0%; height: 100.0%;">서울대청초등학교 - 서울대청초등학교 (0)</div>`)[0];
+                popup_0c4630ae7dd1688e2c28b62739d828f1.setContent(html_68616bfde60e3f1e49480fbe784d920d);
+            
+        
+
+        marker_3c9b1c402fd36870d45b06408e96ef5a.bindPopup(popup_0c4630ae7dd1688e2c28b62739d828f1)
+        ;
+
+        
+    
+    
+                marker_3c9b1c402fd36870d45b06408e96ef5a.setIcon(icon_56d306dff3ba438f6bc9a4ef8e6fe212);
+            
+    
+            var marker_32dbe7d1908eed6cf72976dae80884fc = L.marker(
+                [37.48754, 127.08705],
+                {
+}
+            ).addTo(map_cafc540fe27ed64c6453cf32f8532377);
+        
+    
+            var icon_eb23692d4855cac71253c1608e636c54 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "black",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4a3c2572154c25a50e7a209803301124 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9e8787a3d4060ab282e6b0b61f421538 = $(`<div id="html_9e8787a3d4060ab282e6b0b61f421538" style="width: 100.0%; height: 100.0%;">서울대청초등학교 - 일원에코파크 (1)</div>`)[0];
+                popup_4a3c2572154c25a50e7a209803301124.setContent(html_9e8787a3d4060ab282e6b0b61f421538);
+            
+        
+
+        marker_32dbe7d1908eed6cf72976dae80884fc.bindPopup(popup_4a3c2572154c25a50e7a209803301124)
+        ;
+
+        
+    
+    
+                marker_32dbe7d1908eed6cf72976dae80884fc.setIcon(icon_eb23692d4855cac71253c1608e636c54);
+            
+    
+            var marker_742a6cc81f40aa9c075f2ec353422cce = L.marker(
+                [37.4920557, 127.087615],
+                {
+}
+            ).addTo(map_cafc540fe27ed64c6453cf32f8532377);
+        
+    
+            var icon_8b9b23f349d2e942dcef96ae7d19ea7b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "black",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_91006aa69da2d81e185666c94118c92e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7d87e5e581f1b269d4565213f0564d6e = $(`<div id="html_7d87e5e581f1b269d4565213f0564d6e" style="width: 100.0%; height: 100.0%;">서울대청초등학교 - 서울대청초등학교 (2)</div>`)[0];
+                popup_91006aa69da2d81e185666c94118c92e.setContent(html_7d87e5e581f1b269d4565213f0564d6e);
+            
+        
+
+        marker_742a6cc81f40aa9c075f2ec353422cce.bindPopup(popup_91006aa69da2d81e185666c94118c92e)
+        ;
+
+        
+    
+    
+                marker_742a6cc81f40aa9c075f2ec353422cce.setIcon(icon_8b9b23f349d2e942dcef96ae7d19ea7b);
+            
+    
+            var poly_line_ca55a591ab06783739422643f5c4f5da = L.polyline(
+                [[37.4816561, 127.0861452], [37.4816561, 127.0861452], [37.4816561, 127.0861452]],
+                {"bubblingMouseEvents": true, "color": "cadetblue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "cadetblue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_cafc540fe27ed64c6453cf32f8532377);
+        
+    
+            var marker_fc579ef6cd1feb9444c278e2b8945624 = L.marker(
+                [37.4816561, 127.0861452],
+                {
+}
+            ).addTo(map_cafc540fe27ed64c6453cf32f8532377);
+        
+    
+            var icon_e1bee6aaaad0da9e4b1ac86d74ba3b4c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "cadetblue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_75a09aec884d135b561030f43424e97b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_896157a30f6f6f589ffa15887c9cc48d = $(`<div id="html_896157a30f6f6f589ffa15887c9cc48d" style="width: 100.0%; height: 100.0%;">서울대모초등학교 - 서울대모초등학교 (0)</div>`)[0];
+                popup_75a09aec884d135b561030f43424e97b.setContent(html_896157a30f6f6f589ffa15887c9cc48d);
+            
+        
+
+        marker_fc579ef6cd1feb9444c278e2b8945624.bindPopup(popup_75a09aec884d135b561030f43424e97b)
+        ;
+
+        
+    
+    
+                marker_fc579ef6cd1feb9444c278e2b8945624.setIcon(icon_e1bee6aaaad0da9e4b1ac86d74ba3b4c);
+            
+    
+            var marker_b89fdcadc8430defe47e43add2233c74 = L.marker(
+                [37.4816561, 127.0861452],
+                {
+}
+            ).addTo(map_cafc540fe27ed64c6453cf32f8532377);
+        
+    
+            var icon_861bd96f83c94bc8725165390518c686 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "cadetblue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1c2cbff05cd7e1b12325652a90450a27 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9933ce7519137cfa5e34301168cdbe41 = $(`<div id="html_9933ce7519137cfa5e34301168cdbe41" style="width: 100.0%; height: 100.0%;">서울대모초등학교 - 서울로봇고등학교 (1)</div>`)[0];
+                popup_1c2cbff05cd7e1b12325652a90450a27.setContent(html_9933ce7519137cfa5e34301168cdbe41);
+            
+        
+
+        marker_b89fdcadc8430defe47e43add2233c74.bindPopup(popup_1c2cbff05cd7e1b12325652a90450a27)
+        ;
+
+        
+    
+    
+                marker_b89fdcadc8430defe47e43add2233c74.setIcon(icon_861bd96f83c94bc8725165390518c686);
+            
+    
+            var marker_5c03adc978a02b8a0cfc1cbfd496ae03 = L.marker(
+                [37.4816561, 127.0861452],
+                {
+}
+            ).addTo(map_cafc540fe27ed64c6453cf32f8532377);
+        
+    
+            var icon_1eee3d66aa98921f58f8627df06fe7ef = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "cadetblue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_81f2286c125123694e40fe0567abf0c2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f57e1cad43053bde89fe1a11edc26265 = $(`<div id="html_f57e1cad43053bde89fe1a11edc26265" style="width: 100.0%; height: 100.0%;">서울대모초등학교 - 서울대모초등학교 (2)</div>`)[0];
+                popup_81f2286c125123694e40fe0567abf0c2.setContent(html_f57e1cad43053bde89fe1a11edc26265);
+            
+        
+
+        marker_5c03adc978a02b8a0cfc1cbfd496ae03.bindPopup(popup_81f2286c125123694e40fe0567abf0c2)
+        ;
+
+        
+    
+    
+                marker_5c03adc978a02b8a0cfc1cbfd496ae03.setIcon(icon_1eee3d66aa98921f58f8627df06fe7ef);
+            
+</script>
+</html>
