@@ -1,14 +1,21 @@
 import streamlit as st
 import json
+from datetime import datetime
 from oauth2client.service_account import ServiceAccountCredentials
+import gspread
 
+# ✅ 인증 범위
 scope = ["https://spreadsheets.google.com/feeds", "https://www.googleapis.com/auth/drive"]
 
-# ✅ 키파일을 secrets에서 문자열로 불러와 파싱
+# ✅ secrets에서 서비스 계정 정보 불러오기
 keyfile_dict = json.loads(st.secrets["gcp_service_account"])
-
 credentials = ServiceAccountCredentials.from_json_keyfile_dict(keyfile_dict, scope)
 
+# ✅ 구글시트 클라이언트 생성
+client = gspread.authorize(credentials)
+
+# ✅ 체크인 기록 함수 정의
 def log_checkin(name, school):
-    # 여기에 Google Sheets에 데이터를 기록하는 로직을 작성하자냥
-    pass
+    sheet = client.open("체크인기록").worksheet("Sheet1")  # ← 시트 이름 반드시 확인!
+    now = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+    sheet.append_row([name, school, now])
