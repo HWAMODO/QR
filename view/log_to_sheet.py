@@ -16,6 +16,10 @@ client = gspread.authorize(credentials)
 
 # ✅ 체크인 기록 함수 정의
 def log_checkin(name, school):
-    sheet = client.open("체크인기록").worksheet("Sheet1")  # ← 시트 이름 반드시 확인!
-    now = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-    sheet.append_row([name, school, now])
+    try:
+        sheet = client.open("체크인기록").worksheet("Sheet1")  # 시트 이름 정확히 확인!
+        now = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+        sheet.append_row([name, school, now])
+        print("✅ 시트에 기록 완료:", name, school)
+    except Exception as e:
+        print(f"❌ 구글시트 기록 실패: {e}")
