@@ -1,25 +1,47 @@
-import streamlit as st
-import json
-from datetime import datetime
-from oauth2client.service_account import ServiceAccountCredentials
 import gspread
+from oauth2client.service_account import ServiceAccountCredentials
+from datetime import datetime, timedelta
+import pytz
+import streamlit as st
 
-# ✅ 인증 범위
+# 🔐 인증 키 로딩 및 복원
+raw_secrets = dict(st.secrets["gcp_service_account"])
+raw_secrets["private_key"] = raw_secrets["private_key"].replace("\\n", "\n")
+
 scope = ["https://spreadsheets.google.com/feeds", "https://www.googleapis.com/auth/drive"]
-
-# ✅ secrets에서 서비스 계정 정보 불러오기
-keyfile_dict = json.loads(st.secrets["gcp_service_account"])
-credentials = ServiceAccountCredentials.from_json_keyfile_dict(keyfile_dict, scope)
-
-# ✅ 구글시트 클라이언트 생성
+credentials = ServiceAccountCredentials.from_json_keyfile_dict(raw_secrets, scope)
 client = gspread.authorize(credentials)
 
-# ✅ 체크인 기록 함수 정의
-def log_checkin(name, school):
+sheet = client.open("체크인기록").worksheet("Sheet1")
+
+# ✅ 헤더 검사
+def check_header():
+    expected = ["연번", "이름", "근무장소", "근무시간"]
+    actual = sheet.row_values(1)
+    if actual != expected:
+        sheet.delete_row(1)
+        sheet.insert_row(expected, index=1)
+
+# ✅ 연번 계산
+def get_next_serial_number():
+    all_data = sheet.get_all_values()
+    return len(all_data)  # 헤더 포함
+
+# ✅ 시간 함수 (모바일 환경 대비)
+def get_kst_now():
     try:
-        sheet = client.open("체크인기록").worksheet("Sheet1")  # 시트 이름 정확히 확인!
-        now = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-        sheet.append_row([name, school, now])
-        print("✅ 시트에 기록 완료:", name, school)
-    except Exception as e:
-        print(f"❌ 구글시트 기록 실패: {e}")
+        kst = pytz.timezone("Asia/Seoul")
+        return datetime.now(kst).strftime("%Y-%m-%d %H:%M:%S")
+    except:
+        return (datetime.utcnow() + timedelta(hours=9)).strftime("%Y-%m-%d %H:%M:%S")
+
+# ✅ 체크인 함수
+def log_checkin(name, school):
+    check_header()
+    serial = get_next_serial_number()
+    now = get_kst_now()
+
+    new_row = [serial, name, school, now]
+    if len(new_row) == 4:
+        sheet.append_row(new_row, value_input_option="RAW")
+
